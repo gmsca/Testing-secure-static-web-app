@@ -9,14 +9,6 @@
           "allowedRoles": ["authenticated"]
         }
       ],
-      "responseOverrides": {
-        "401": {
-          "statusCode": 302,
-          "redirect": "/.auth/login/aadb2c?post_login_redirect_uri=Naverror.html"
-        }
-      },  
-
-
     "navigationFallback": {
         "rewrite": "/Naverror.html"
     },
