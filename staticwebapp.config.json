@@ -1,16 +1,18 @@
 {
-    "globalHeaders": {
-        "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
-      },
-
     "routes": [
         {
-          "route": "/*",
+          "route": "/index.html",
           "allowedRoles": ["authenticated"]
         }
       ],
+      "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/.auth/login/aadb2c"
+        }
+      },
     "navigationFallback": {
-        "rewrite": "/Naverror.html"
+        "rewrite": "/index.html"
     },
 
     "auth": {
