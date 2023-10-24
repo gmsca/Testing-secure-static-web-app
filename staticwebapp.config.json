@@ -5,6 +5,12 @@
           "allowedRoles": ["authenticated"]
         }
       ],
+      "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/.auth/login/aadb2c"
+        }
+      },
     "navigationFallback": {
         "rewrite": "/index.html"
     },
