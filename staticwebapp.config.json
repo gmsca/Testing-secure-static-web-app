@@ -7,15 +7,7 @@
         {
           "route": "/*",
           "allowedRoles": ["authenticated"]
-        },
-
-        {
-            "route": "/index.html",
-            "headers": {
-              "cache-control": "must-revalidate, max-age=15770000"
-            }
-          }
-
+        }
       ],
       "responseOverrides": {
         "401": {
