@@ -10,7 +10,7 @@
         },
 
         {
-            "route": "/*",
+            "route": "/index.html",
             "headers": {
               "cache-control": "must-revalidate, max-age=15770000"
             }
@@ -26,7 +26,7 @@
 
 
     "navigationFallback": {
-        "rewrite": "/index.html"
+        "rewrite": "/Naverror.html"
     },
 
     "auth": {
